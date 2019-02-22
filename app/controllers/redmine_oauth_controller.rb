@@ -59,7 +59,7 @@ class RedmineOauthController < AccountController
       user.lastname ||= info["name"]
       user.mail = email
       user.login = info['login']
-      user.login ||= [user.firstname, user.lastname]*"."
+      user.login ||= email.split('@').first
       user.random_password
       user.register
 
