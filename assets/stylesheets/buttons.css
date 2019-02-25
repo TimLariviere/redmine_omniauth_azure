@@ -16,7 +16,13 @@ a.identity-provider-link {
 	color: #fff;
 	white-space: nowrap;
 	overflow: hidden;
-	text-overflow: ellipsis;
+  text-overflow: ellipsis;
+
+  font-family: 'Helvetica Neue','Segoe UI',Helvetica,Arial,sans-serif;
+  font-size: 13px;  
+  width: 200px;
+  height: 40px;
+  margin: 5em auto 0px auto;
 }
 
 a.identity-provider-link > img {
@@ -24,6 +30,9 @@ a.identity-provider-link > img {
   vertical-align: top;
   overflow: visible;
   border: 0;
+  width: 20px;
+  height: 20px;
+  box-sizing: unset;
 }
 
 a.identity-provider-link > span::before {
